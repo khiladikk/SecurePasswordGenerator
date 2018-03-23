@@ -23,7 +23,7 @@ def simple(n):          #for simple password
     for i in range(0,n):
         password.append(random.choice(upper+lower+num))
 def hard(n):
-    for i in range(0,n):
+    for i in range(0,n):    #for complex password
         password.append(random.choice(allchar))
 
 def choice(n):
