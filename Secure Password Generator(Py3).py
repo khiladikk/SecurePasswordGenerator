@@ -16,7 +16,9 @@ lower=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','
 specialchar='`~!@#$%^&*()_+-=[]{}|/;:,<.>?'
 specialchar=list(specialchar)
 allchar=upper+lower+specialchar
-n=(input('\n\nEnter length of your password: '))
+# 'str' object cannot be interpreted as an integer that's why int
+n=int(input('\n\nEnter length of your password: '))
+
 password=[]
 
 def simple(n):          #for simple password.
